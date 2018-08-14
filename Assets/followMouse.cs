@@ -12,7 +12,9 @@ public class followMouse : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Vector3 mousepos = cam.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 perpendicular = Vector3.Cross(transform.position - mousepos, Vector3.forward);
-        transform.rotation = Quaternion.LookRotation(transform.position - mousepos, Vector3.forward);
+        Quaternion rotation = Quaternion.LookRotation(transform.position - mousepos, Vector3.forward);
+        rotation.x = 0;
+        rotation.y = 0;
+        transform.rotation = rotation;
 	}
 }
