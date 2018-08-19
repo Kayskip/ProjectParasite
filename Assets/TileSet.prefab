@@ -180,6 +180,18 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+<<<<<<< HEAD
+=======
+  - first: {x: 4, y: 2, z: 0}
+    second:
+      m_TileIndex: 12
+      m_TileSpriteIndex: 12
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+>>>>>>> parent of 76fd004... Updated walls and added more textures
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 1
@@ -190,6 +202,31 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 9e75ac4dc2fa4a041bfad948b5665c13, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 49d2c55e4fadedd4b8ad8cc0d191de3c, type: 2}
+<<<<<<< HEAD
+=======
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 3e5de681f2b04bd46b6aafce835d05b6, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 302e4ba261d8229429c19f606df12615, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 962408db712338a4e9d0b94bac0ee5de, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 6cca699cde9dc354da44355c2a5cce5a, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 5709bddcf900afb418a90a4bdfe6b046, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: da745f81f81c49f489732aadefdc31f0, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 4a5defca0bc17fc479680b2e58368b25, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 64fa06f586f2ee2489778c7634e78c16, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 96325ad0bb2771f408624e6454f2427c, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: e052647d8d96a034a8297484ae9c3b4d, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 3f9348e9d33be3543a0db5a7d23f3387, type: 2}
+>>>>>>> parent of 76fd004... Updated walls and added more textures
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 6264799315d984d4c8dc3c08925c6121, type: 3}
@@ -199,8 +236,35 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 41ae3ccfbcddcc0419acdddc6e3b9348, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 7079502fb52a3834aab652be155ec6c9, type: 3}
+<<<<<<< HEAD
   m_TileMatrixArray:
   - m_RefCount: 4
+=======
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 6ce66a8fd160f724fa18c2c49cf036b1, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 4c8914cbc56a12e4e9e4dce05a83a89a, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: b99c0d714be094849924f8fd4ed1d3f4, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 743de5eadd9622740b83fd6d5d74b9c8, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: ffc2771db1700d041a5ff485cf9bb014, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 64c4dda93e138e049aa10bc42f3e432b, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 8760dd36f2ca5fd4ebd3c3b27cd4f4dd, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: c3b57fa41478df04ebea2fd458e703b6, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: fc10b01efda352046ba12f559f12aa9f, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 5cef312912094cf46bf44b8cab88df69, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: fb4eebca9b722e047a77a9f2cb0d76f7, type: 3}
+  m_TileMatrixArray:
+  - m_RefCount: 15
+>>>>>>> parent of 76fd004... Updated walls and added more textures
     m_Data:
       e00: 1
       e01: 0
@@ -219,7 +283,11 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
+<<<<<<< HEAD
   - m_RefCount: 4
+=======
+  - m_RefCount: 15
+>>>>>>> parent of 76fd004... Updated walls and added more textures
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
