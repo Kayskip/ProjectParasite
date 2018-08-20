@@ -7,7 +7,7 @@ public class Health : MonoBehaviour {
 
     public int maxHealth;
     private int currentHealth;
-    //private bool isHit;
+    private bool isHit;
 
     public Slider healthSlider;
     public Image damageImage;
@@ -17,12 +17,11 @@ public class Health : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         currentHealth = maxHealth;
-        //isHit = false;
+        isHit = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        /*
         if (currentHealth == 0)
         {
             Destroy(gameObject);
@@ -36,7 +35,6 @@ public class Health : MonoBehaviour {
             damageImage.color = Color.Lerp(damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
         }
         isHit = false;
-        */
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -45,7 +43,7 @@ public class Health : MonoBehaviour {
         {
             currentHealth--;
             healthSlider.value = currentHealth;
-            //isHit = true;
+            isHit = true;
         }
         if (collision.gameObject.tag == "Healthpack" && currentHealth < maxHealth)
         {
