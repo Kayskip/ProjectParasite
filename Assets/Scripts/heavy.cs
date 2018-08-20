@@ -2,20 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : Enemy{
+public class Heavy : Enemy{
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         stamina = 100f;
-        health = 50;
-        speed = 20;
-        strength = 10;
-        regenRate = .5f;
+        health = 100;
+        speed = 10;
+        attackSpeed = 3.0f;
+        strength = 30;
+        regenRate = 1.0f;
         maxStamina = 100f;
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    public override void passiveRegen()
+    {
+        stamina += regenRate;
+        health += (int)regenRate;
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 }
