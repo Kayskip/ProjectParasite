@@ -2,19 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Enemy : MonoBehaviour {
+public class Enemy : MonoBehaviour {
     public float speed;
     public float attackSpeed;
     private Transform playerPos;
+    public string enemyClass;
     public int health;
     public int strength;
     public float stamina;
     public float regenRate;
-    protected float minDist = 1.5f;
-    protected float aggroDist = 5f;
-    protected float maxStamina;
+    public GameObject bullet;
+    public float minDist;
+    public float aggroDist;
+    public float maxStamina;
 
-    public abstract void passiveRegen();
+
+    public void passiveRegen() {
+    }
 
     // Use this for initialization
     void Start () {

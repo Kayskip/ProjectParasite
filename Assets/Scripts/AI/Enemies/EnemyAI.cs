@@ -2,26 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HeavyAI : MonoBehaviour {
+public class EnemyAI : MonoBehaviour {
     Tree tree = new Tree();
 
-    public void rangedAttack() {
+    public void rangedAttack()
+    {
 
     }
 
-    public void meleeAttack() {
+    public void meleeAttack()
+    {
 
     }
 
-    public void grenade() {
+    public void grenade()
+    {
 
     }
 
-    public void rangedAim() {
+    public void rangedAim()
+    {
 
     }
 
-    public void grenadeAim() {
+    public void grenadeAim()
+    {
 
     }
 
@@ -30,10 +35,8 @@ public class HeavyAI : MonoBehaviour {
 
     }
 
-
-
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
