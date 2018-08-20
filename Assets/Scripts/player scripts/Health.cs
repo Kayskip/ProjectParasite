@@ -8,6 +8,7 @@ public class Health : MonoBehaviour {
     public int maxHealth;
     private int currentHealth;
     private bool isHit;
+    private bool possessing;
 
     public Slider healthSlider;
     public Image damageImage;
@@ -24,7 +25,14 @@ public class Health : MonoBehaviour {
 	void Update () {
         if (currentHealth == 0)
         {
-            Destroy(gameObject);
+            if (possessing)
+            {
+
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
         if (isHit)
         {
@@ -49,5 +57,14 @@ public class Health : MonoBehaviour {
         {
             currentHealth++;
         }
+    }
+
+    public int getHealth()
+    {
+        return currentHealth;
+    }
+    public void possess(bool change)
+    {
+        possessing = change;
     }
 }

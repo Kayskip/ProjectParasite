@@ -35,7 +35,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4350513055425542}
   - component: {fileID: 212225323833723726}
-  - component: {fileID: 114311157562296102}
+  - component: {fileID: 114166457828969604}
+  - component: {fileID: 114538824971628736}
+  - component: {fileID: 114342479377756228}
   m_Layer: 0
   m_Name: gun turret
   m_TagString: Untagged
@@ -50,7 +52,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1170574467676600}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4350513055425542}
@@ -70,7 +72,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114311157562296102
+--- !u!114 &114166457828969604
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,7 +80,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 1577164674810608}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb4fd9810a94ed74997fb2d03acbf294, type: 3}
+  m_Script: {fileID: 11500000, guid: 54537f6912467ec4e88654dfaaed64fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
+--- !u!114 &114342479377756228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1577164674810608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b7bbdc1995ed004984f0b27eb1f6956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114538824971628736
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1577164674810608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 438ba1a3651af664b8911ba2a9ff7b2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   firepoint: {fileID: 4058527723023334}
