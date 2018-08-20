@@ -7,11 +7,13 @@ public class possess : MonoBehaviour {
     int preHealth;
     Sprite preSprite;
     Health health;
+    private SpriteRenderer spriteR;
 
 
 
     void Start() {
-        preSprite = gameObject.GetComponent<SpriteRenderer>().sprite;
+        spriteR = gameObject.GetComponent<SpriteRenderer>();
+        preSprite = spriteR.sprite;
         health = gameObject.GetComponent<Health>();
         preHealth = health.getHealth();
     }
@@ -25,8 +27,9 @@ public class possess : MonoBehaviour {
             shoot.possess(true);
             GameObject target = FindClosest();
             Sprite nSprite = target.GetComponent<SpriteRenderer>().sprite;
-            gameObject.GetComponent<SpriteRenderer>().sprite = nSprite;
+            spriteR.sprite = nSprite;
             health.setHealth(target.GetComponent<npcHealth>().getHealth());
+            Destroy(target);
         }
     }
 
@@ -36,7 +39,7 @@ public class possess : MonoBehaviour {
         shoot.possess(false);
         Health health = gameObject.GetComponent<Health>();
         health.setHealth(preHealth);
-        gameObject.GetComponent<SpriteRenderer>().sprite = preSprite;
+        spriteR.sprite = preSprite;
     }
 
     private GameObject FindClosest()
