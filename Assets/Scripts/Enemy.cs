@@ -5,13 +5,11 @@ using UnityEngine;
 public abstract class Enemy : MonoBehaviour {
     public float speed;
     public float attackSpeed;
-    public float accuracy;
     private Transform playerPos;
     public int health;
     public int strength;
     public float stamina;
     public float regenRate;
-    public int ammo;
     protected float minDist = 1.5f;
     protected float aggroDist = 5f;
     protected float maxStamina;

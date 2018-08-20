@@ -30,13 +30,10 @@ public class HeavyAI : MonoBehaviour {
 
     }
 
-    public void runAway()
-    {
 
-    }
 
-    // Use this for initialization
-    void Start () {
+	// Use this for initialization
+	void Start () {
 		
 	}
 	
