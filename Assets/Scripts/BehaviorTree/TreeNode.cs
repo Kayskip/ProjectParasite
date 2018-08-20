@@ -6,6 +6,7 @@ public class TreeNode {
 
     public string nodeType = "selector";
     public string action = "root";
+    public TreeNode parentNode;
     public List<TreeNode> childrenList = new List<TreeNode>();
 
     public void setType(string nodeType)
@@ -33,6 +34,11 @@ public class TreeNode {
         this.action = action;
     }
 
+    public void setParentNode(TreeNode node)
+    {
+        this.parentNode = node;
+    }
+
     public void addChild(TreeNode node) {
         if (nodeType.Equals("mono") && childrenList.Count > 1) {
             // if it is the case of mono and number of leaves are more than 1 then do nothing 
@@ -43,7 +49,7 @@ public class TreeNode {
     }
 
     public void removeChild(TreeNode node) {
-        childrenList.Remove(node);
+        if(childrenList.Contains(node)) childrenList.Remove(node);
     }
 
     public string getAction() {
@@ -52,6 +58,11 @@ public class TreeNode {
 
     public string getType() {
         return nodeType;
+    }
+
+    public TreeNode getParentNode()
+    {
+        return parentNode;
     }
 
     public List<TreeNode> getChildren() {
