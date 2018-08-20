@@ -36,9 +36,10 @@ GameObject:
   - component: {fileID: 4748734841119594}
   - component: {fileID: 212706422986045212}
   - component: {fileID: 114186660255756168}
+  - component: {fileID: 114727685324173526}
   m_Layer: 0
   m_Name: enemyDone
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63,7 +64,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1604681980653680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.4053376, y: -1.881748, z: 0}
+  m_LocalPosition: {x: 1.8953006, y: 4.9501534, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4215710233820828}
@@ -88,12 +89,24 @@ MonoBehaviour:
   strength: 0
   stamina: 0
   regenRate: 0
-  bullet: {fileID: 1021315609602094, guid: 8cb60192912e8f641a34cb62ffc3a00a, type: 2}
+  bullet: {fileID: 1955594448438192, guid: aa148d2070ecb6a4da721f5661f12879, type: 2}
   minDist: 0
   aggroDist: 0
   maxStamina: 0
   firepoint: {fileID: 1262628290136612}
   attackPeriod: 0
+--- !u!114 &114727685324173526
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1604681980653680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54537f6912467ec4e88654dfaaed64fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
 --- !u!212 &212706422986045212
 SpriteRenderer:
   m_ObjectHideFlags: 1

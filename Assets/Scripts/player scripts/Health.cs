@@ -17,6 +17,7 @@ public class Health : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        possessing = false;
         currentHealth = maxHealth;
         isHit = false;
 	}
@@ -27,7 +28,8 @@ public class Health : MonoBehaviour {
         {
             if (possessing)
             {
-
+                possessing = false;
+                gameObject.GetComponent<possess>().die();
             }
             else
             {
@@ -62,6 +64,10 @@ public class Health : MonoBehaviour {
     public int getHealth()
     {
         return currentHealth;
+    }
+    public void setHealth(int nHealth)
+    {
+        currentHealth = nHealth;   
     }
     public void possess(bool change)
     {
