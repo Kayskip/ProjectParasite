@@ -9,19 +9,22 @@ public class Health : MonoBehaviour {
     private bool isHit;
 	// Use this for initialization
 	void Start () {
-        isHit = false;
         currentHealth = maxHealth;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (isHit)
-        {
-            currentHealth--;
-        }
         if (currentHealth == 0)
         {
             Destroy(gameObject);
         }
 	}
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Bullet")
+        {
+            currentHealth--;
+        }
+    }
 }
