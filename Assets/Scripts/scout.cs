@@ -13,6 +13,8 @@ public class Scout : Enemy {
         strength = 100;
         regenRate = .5f;
         maxStamina = 50f;
+        accuracy = 0.6f;
+        ammo = 20;
     }
 
     public override void passiveRegen()

@@ -13,6 +13,8 @@ public class Heavy : Enemy{
         strength = 30;
         regenRate = 1.0f;
         maxStamina = 100f;
+        accuracy = 0.5f;
+        ammo = 20;
     }
 
     public override void passiveRegen()
