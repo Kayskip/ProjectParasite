@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     //public int strength;
     //public float stamina;
     //public float regenRate;
-    //public GameObject bullet;
+    public GameObject bullet;
     //public float minDist;
     //public float maxStamina;
     public GameObject firepoint;
