@@ -58,6 +58,7 @@ public class Health : MonoBehaviour {
         if (collision.gameObject.tag == "Healthpack" && currentHealth < maxHealth)
         {
             currentHealth++;
+            Destroy(collision.gameObject);
         }
     }
 
