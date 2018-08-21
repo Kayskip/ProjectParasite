@@ -139,11 +139,12 @@ public class Enemy : MonoBehaviour
     {
         float movementCD = movementPeriod / speed;
         timeCount2 += 0.1f;
-        if (timeCount > movementCD)
+        if (timeCount2 > movementCD)
         {
             randomPosition = new Vector3(Random.Range(-3.0f, 3.0f), Random.Range(-3.0f, 3.0f), 0);
             timeCount2 = 0.0f;
         }
+        Debug.Log(randomPosition);
         actionControl();
 
         //Not working somehow
