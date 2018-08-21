@@ -224,13 +224,7 @@ MonoBehaviour:
   speed: 1
   attackSpeed: 1
   enemyClass: 
-  health: 0
-  strength: 0
-  stamina: 0
-  regenRate: 0
   bullet: {fileID: 1955594448438192, guid: aa148d2070ecb6a4da721f5661f12879, type: 2}
-  minDist: 0
-  maxStamina: 0
   firepoint: {fileID: 604169910}
   detected: 0
   detectPoint: 0
@@ -398,13 +392,7 @@ MonoBehaviour:
   speed: 1
   attackSpeed: 1
   enemyClass: 
-  health: 0
-  strength: 0
-  stamina: 0
-  regenRate: 0
   bullet: {fileID: 1955594448438192, guid: aa148d2070ecb6a4da721f5661f12879, type: 2}
-  minDist: 0
-  maxStamina: 0
   firepoint: {fileID: 1012294445}
   detected: 0
   detectPoint: 0
@@ -878,13 +866,7 @@ MonoBehaviour:
   speed: 1
   attackSpeed: 1
   enemyClass: 
-  health: 0
-  strength: 0
-  stamina: 0
-  regenRate: 0
   bullet: {fileID: 1955594448438192, guid: aa148d2070ecb6a4da721f5661f12879, type: 2}
-  minDist: 0
-  maxStamina: 0
   firepoint: {fileID: 1793606973}
   detected: 0
   detectPoint: 0
@@ -1052,13 +1034,7 @@ MonoBehaviour:
   speed: 1
   attackSpeed: 1
   enemyClass: 
-  health: 0
-  strength: 0
-  stamina: 0
-  regenRate: 0
   bullet: {fileID: 1955594448438192, guid: aa148d2070ecb6a4da721f5661f12879, type: 2}
-  minDist: 0
-  maxStamina: 0
   firepoint: {fileID: 487533706}
   detected: 0
   detectPoint: 0
@@ -1285,13 +1261,7 @@ MonoBehaviour:
   speed: 1
   attackSpeed: 1
   enemyClass: 
-  health: 0
-  strength: 0
-  stamina: 0
-  regenRate: 0
   bullet: {fileID: 1955594448438192, guid: aa148d2070ecb6a4da721f5661f12879, type: 2}
-  minDist: 0
-  maxStamina: 0
   firepoint: {fileID: 80087409}
   detected: 0
   detectPoint: 0
@@ -1689,13 +1659,7 @@ MonoBehaviour:
   speed: 1
   attackSpeed: 1
   enemyClass: 
-  health: 0
-  strength: 0
-  stamina: 0
-  regenRate: 0
   bullet: {fileID: 1955594448438192, guid: aa148d2070ecb6a4da721f5661f12879, type: 2}
-  minDist: 0
-  maxStamina: 0
   firepoint: {fileID: 2016093954}
   detected: 0
   detectPoint: 0
@@ -1956,13 +1920,7 @@ MonoBehaviour:
   speed: 1
   attackSpeed: 1
   enemyClass: 
-  health: 0
-  strength: 0
-  stamina: 0
-  regenRate: 0
   bullet: {fileID: 1955594448438192, guid: aa148d2070ecb6a4da721f5661f12879, type: 2}
-  minDist: 0
-  maxStamina: 0
   firepoint: {fileID: 529712735}
   detected: 0
   detectPoint: 0
@@ -2321,13 +2279,7 @@ MonoBehaviour:
   speed: 1
   attackSpeed: 1
   enemyClass: 
-  health: 0
-  strength: 0
-  stamina: 0
-  regenRate: 0
   bullet: {fileID: 1955594448438192, guid: aa148d2070ecb6a4da721f5661f12879, type: 2}
-  minDist: 0
-  maxStamina: 0
   firepoint: {fileID: 696131878}
   detected: 0
   detectPoint: 0
@@ -2587,13 +2539,7 @@ MonoBehaviour:
   speed: 1
   attackSpeed: 1
   enemyClass: 
-  health: 0
-  strength: 0
-  stamina: 0
-  regenRate: 0
   bullet: {fileID: 1955594448438192, guid: aa148d2070ecb6a4da721f5661f12879, type: 2}
-  minDist: 0
-  maxStamina: 0
   firepoint: {fileID: 1488842419}
   detected: 0
   detectPoint: 0
@@ -3566,13 +3512,7 @@ MonoBehaviour:
   speed: 1
   attackSpeed: 1
   enemyClass: 
-  health: 0
-  strength: 0
-  stamina: 0
-  regenRate: 0
   bullet: {fileID: 1955594448438192, guid: aa148d2070ecb6a4da721f5661f12879, type: 2}
-  minDist: 0
-  maxStamina: 0
   firepoint: {fileID: 772221347}
   detected: 0
   detectPoint: 0
@@ -3802,13 +3742,7 @@ MonoBehaviour:
   speed: 1
   attackSpeed: 1
   enemyClass: 
-  health: 0
-  strength: 0
-  stamina: 0
-  regenRate: 0
   bullet: {fileID: 1955594448438192, guid: aa148d2070ecb6a4da721f5661f12879, type: 2}
-  minDist: 0
-  maxStamina: 0
   firepoint: {fileID: 1043492585}
   detected: 0
   detectPoint: 0
@@ -3976,18 +3910,12 @@ MonoBehaviour:
   speed: 1
   attackSpeed: 1
   enemyClass: 
-  health: 0
-  strength: 0
-  stamina: 0
-  regenRate: 0
   bullet: {fileID: 1955594448438192, guid: aa148d2070ecb6a4da721f5661f12879, type: 2}
-  minDist: 0
-  maxStamina: 0
   firepoint: {fileID: 385492723}
   detected: 0
   detectPoint: 0
   maxDetecPoint: 150
-  detectRange: 5
+  detectRange: 3
   detectRate: 2
   detectLimit: 100
   attackPeriod: 5
@@ -4180,13 +4108,7 @@ MonoBehaviour:
   speed: 1
   attackSpeed: 1
   enemyClass: 
-  health: 0
-  strength: 0
-  stamina: 0
-  regenRate: 0
   bullet: {fileID: 1955594448438192, guid: aa148d2070ecb6a4da721f5661f12879, type: 2}
-  minDist: 0
-  maxStamina: 0
   firepoint: {fileID: 1821186031}
   detected: 0
   detectPoint: 0
@@ -5033,13 +4955,7 @@ MonoBehaviour:
   speed: 1
   attackSpeed: 1
   enemyClass: 
-  health: 0
-  strength: 0
-  stamina: 0
-  regenRate: 0
   bullet: {fileID: 1955594448438192, guid: aa148d2070ecb6a4da721f5661f12879, type: 2}
-  minDist: 0
-  maxStamina: 0
   firepoint: {fileID: 1691187940}
   detected: 0
   detectPoint: 0
@@ -5207,13 +5123,7 @@ MonoBehaviour:
   speed: 1
   attackSpeed: 1
   enemyClass: 
-  health: 0
-  strength: 0
-  stamina: 0
-  regenRate: 0
   bullet: {fileID: 1955594448438192, guid: aa148d2070ecb6a4da721f5661f12879, type: 2}
-  minDist: 0
-  maxStamina: 0
   firepoint: {fileID: 1738629733}
   detected: 0
   detectPoint: 0
@@ -5345,13 +5255,7 @@ MonoBehaviour:
   speed: 1
   attackSpeed: 1
   enemyClass: 
-  health: 0
-  strength: 0
-  stamina: 0
-  regenRate: 0
   bullet: {fileID: 1955594448438192, guid: aa148d2070ecb6a4da721f5661f12879, type: 2}
-  minDist: 0
-  maxStamina: 0
   firepoint: {fileID: 211108922}
   detected: 0
   detectPoint: 0
@@ -5808,13 +5712,7 @@ MonoBehaviour:
   speed: 1
   attackSpeed: 1
   enemyClass: 
-  health: 0
-  strength: 0
-  stamina: 0
-  regenRate: 0
   bullet: {fileID: 1955594448438192, guid: aa148d2070ecb6a4da721f5661f12879, type: 2}
-  minDist: 0
-  maxStamina: 0
   firepoint: {fileID: 1478722763}
   detected: 0
   detectPoint: 0

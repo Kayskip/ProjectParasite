@@ -116,7 +116,7 @@ public class Enemy : MonoBehaviour
         {
             if (detectPoint > 0)
             {
-                detectPoint-= detectRate / 2;
+                detectPoint-= detectRate / 10;
             }
         }
         if (detectPoint > detectLimit)
