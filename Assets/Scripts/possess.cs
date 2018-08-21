@@ -9,7 +9,6 @@ public class possess : MonoBehaviour {
     Health health;
     private SpriteRenderer spriteR;
     shooting shoot;
-    public Sprite turret;
 
 
 
@@ -31,7 +30,7 @@ public class possess : MonoBehaviour {
                 health.possess(true);
                 shoot.possess(true);
                 SpriteRenderer nSprite = target.GetComponent<SpriteRenderer>();
-                spriteR.sprite = turret;
+                spriteR.sprite = nSprite.sprite;
                 //spriteR.
                 health.setHealth(target.GetComponent<npcHealth>().getHealth());
                 Transform Tpos = target.transform;
@@ -58,14 +57,17 @@ public class possess : MonoBehaviour {
         GameObject best = null;
         float distance = Mathf.Infinity;
         Vector2 pos = transform.position;
-        foreach(GameObject target in targets)
+        foreach (GameObject target in targets)
         {
             Vector2 diff = (Vector2)target.transform.position - pos;
             float curDistace = diff.sqrMagnitude;
-            if(curDistace < distance)
+            if (curDistace < 10)
             {
-                best = target;
-                distance = curDistace;
+                if (curDistace < distance)
+                {
+                    best = target;
+                    distance = curDistace;
+                }
             }
         }
         return best;
