@@ -24,6 +24,7 @@ public class Health : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        healthSlider.value = currentHealth;
         if (currentHealth == 0)
         {
             if (possessing)
@@ -52,13 +53,13 @@ public class Health : MonoBehaviour {
         if(collision.gameObject.tag == "Bullet")
         {
             currentHealth--;
-            healthSlider.value = currentHealth;
             isHit = true;
         }
         if (collision.gameObject.tag == "Healthpack" && currentHealth < maxHealth)
         {
             currentHealth++;
             Destroy(collision.gameObject);
+
         }
     }
 

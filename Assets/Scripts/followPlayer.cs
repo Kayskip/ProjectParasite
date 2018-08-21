@@ -5,6 +5,7 @@ using UnityEngine;
 public class followPlayer : MonoBehaviour {
     Vector3 playerpos;
     GameObject player;
+    public GameObject spinner;
     // Use this for initialization
     void Start () {
          player = GameObject.Find("Player 1");
@@ -17,7 +18,7 @@ public class followPlayer : MonoBehaviour {
         Quaternion rotation = Quaternion.LookRotation(transform.position - playerpos, Vector3.forward);
         rotation.x = 0;
         rotation.y = 0;
-        transform.rotation = rotation;
+        spinner.transform.rotation = rotation;
 
     }
 }
