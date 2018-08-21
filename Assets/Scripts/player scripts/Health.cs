@@ -69,7 +69,8 @@ public class Health : MonoBehaviour {
     }
     public void setHealth(int nHealth)
     {
-        currentHealth = nHealth;   
+        currentHealth = nHealth; 
+        
     }
     public void possess(bool change)
     {

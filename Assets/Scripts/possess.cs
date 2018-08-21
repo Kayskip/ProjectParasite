@@ -8,6 +8,8 @@ public class possess : MonoBehaviour {
     Sprite preSprite;
     Health health;
     private SpriteRenderer spriteR;
+    shooting shoot;
+    public Sprite turret;
 
 
 
@@ -16,20 +18,27 @@ public class possess : MonoBehaviour {
         preSprite = spriteR.sprite;
         health = gameObject.GetComponent<Health>();
         preHealth = health.getHealth();
+        shoot = gameObject.GetComponent<shooting>();
     }
 
     // Update is called once per frame
     void Update() {
         if (Input.GetButtonDown("Jump"))
         {            
-            health.possess(true);
-            shooting shoot = gameObject.GetComponent<shooting>();
-            shoot.possess(true);
             GameObject target = FindClosest();
-            Sprite nSprite = target.GetComponent<SpriteRenderer>().sprite;
-            spriteR.sprite = nSprite;
-            health.setHealth(target.GetComponent<npcHealth>().getHealth());
-            Destroy(target);
+            if (target != null)
+            {
+                health.possess(true);
+                shoot.possess(true);
+                SpriteRenderer nSprite = target.GetComponent<SpriteRenderer>();
+                spriteR.sprite = turret;
+                //spriteR.
+                health.setHealth(target.GetComponent<npcHealth>().getHealth());
+                Transform Tpos = target.transform;
+                Destroy(target);
+                gameObject.transform.position = Tpos.position;
+
+            }
         }
     }
 

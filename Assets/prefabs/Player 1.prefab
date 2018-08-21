@@ -22,7 +22,7 @@ GameObject:
   m_Layer: 0
   m_Name: firePoint
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b7834dca70c694c982c25cbd4a8970, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turret: {fileID: 21300000, guid: f94c46f14b79d409e80d64e58e892172, type: 3}
 --- !u!114 &114361957028383280
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -163,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7b08cc80da16df4ea3efeff73c20883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 3
 --- !u!114 &114572425830789414
 MonoBehaviour:
   m_ObjectHideFlags: 1
