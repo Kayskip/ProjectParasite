@@ -6,15 +6,14 @@ public class Enemy : MonoBehaviour
 {
     public float speed;
     public float attackSpeed = 1.0f;
-    //private Transform playerPos;
     public string enemyClass;
-    public int health;
-    public int strength;
-    public float stamina;
-    public float regenRate;
-    public GameObject bullet;
-    public float minDist;
-    public float maxStamina;
+    //public int health;
+    //public int strength;
+    //public float stamina;
+    //public float regenRate;
+    //public GameObject bullet;
+    //public float minDist;
+    //public float maxStamina;
     public GameObject firepoint;
     public bool detected = false;
     public float detectPoint;
@@ -28,12 +27,11 @@ public class Enemy : MonoBehaviour
     private float timeCount2 = 0.0f;
     public float movementPeriod = 5.0f;
 
-    Transform playerPos;
+    Transform playerTrans;
 
     public void rangedAttack()
     {
-        Transform firepointTransform = firepoint.transform;
-        Instantiate(bullet, firepointTransform.position, firepointTransform.rotation);
+        Instantiate(bullet, firepoint.transform.position, firepoint.transform.rotation);
     }
 
     public void shoot()
@@ -69,19 +67,19 @@ public class Enemy : MonoBehaviour
 
     public void walkToPlayer()
     {
-        Vector3 _dir = playerPos.position - transform.position;
-        float angle = Mathf.Atan2(_dir.y, _dir.x) * Mathf.Rad2Deg;
-        Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
-        transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * speed);
-        transform.position = Vector2.MoveTowards(transform.position, playerPos.position, speed * Time.deltaTime);
+        Vector3 _dir = playerTrans.position - transform.position;
+        float distX = _dir.x;
+        float distY = _dir.y;
+        if (distX < 0) distX = -distX;
+        if (distY < 0) distY = -distY; 
+        if (distX > 1 && distY > 1) {
+            transform.position = Vector2.MoveTowards(transform.position, playerTrans.position, speed * Time.deltaTime);
+        }
     }
 
     public void randomMove() {
-        Vector3 _dir = randomPosition - transform.position;
-        float angle = Mathf.Atan2(_dir.y, _dir.x) * Mathf.Rad2Deg;
-        Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
-        transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * speed);
-        transform.position = Vector2.MoveTowards(transform.position, randomPosition, speed * Time.deltaTime);
+        Vector3 targetPosition = transform.position + randomPosition;
+        transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
     }
 
     public void passiveRegen()
@@ -95,9 +93,18 @@ public class Enemy : MonoBehaviour
     }
 
     public void actionControl() {
-        playerPos = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        float xRange = playerPos.position.x - transform.position.x;
-        float yRange = playerPos.position.y - transform.position.y;
+        playerTrans = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+
+        Vector3 _dir = playerTrans.position - transform.position;
+        float angle = Mathf.Atan2(_dir.y, _dir.x);
+        float rotationAngle = angle * Mathf.Rad2Deg - 90 + Random.Range(-30.0f, 30.0f);
+        firepoint.transform.eulerAngles = new Vector3(0, 0, rotationAngle);
+        Vector2 offset = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)) * 1.5f;
+        Vector2 _center = transform.position;
+        firepoint.transform.position = _center + offset;
+
+        float xRange = playerTrans.position.x - transform.position.x;
+        float yRange = playerTrans.position.y - transform.position.y;
         if ((xRange > -detectRange / 2 && xRange < detectRange / 2) || (yRange > -detectRange / 2 && yRange < detectRange / 2))
         {
             if (detectPoint < maxDetecPoint)
@@ -137,6 +144,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        transform.eulerAngles = new Vector3(0, 0, 0);
         float movementCD = movementPeriod / speed;
         timeCount2 += 0.1f;
         if (timeCount2 > movementCD)
@@ -144,10 +152,6 @@ public class Enemy : MonoBehaviour
             randomPosition = new Vector3(Random.Range(-3.0f, 3.0f), Random.Range(-3.0f, 3.0f), 0);
             timeCount2 = 0.0f;
         }
-        Debug.Log(randomPosition);
         actionControl();
-
-        //Not working somehow
-        //transform.position = Vector2.MoveTowards(transform.position, playerPos.position, speed*Time.deltaTime);
     }
 }

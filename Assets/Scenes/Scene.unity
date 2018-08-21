@@ -3351,7 +3351,7 @@ GameObject:
   - component: {fileID: 727350197}
   m_Layer: 0
   m_Name: Enemies
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3987,8 +3987,8 @@ MonoBehaviour:
   detected: 0
   detectPoint: 0
   maxDetecPoint: 150
-  detectRange: 3
-  detectRate: 0.8
+  detectRange: 5
+  detectRate: 2
   detectLimit: 100
   attackPeriod: 5
   movementPeriod: 5

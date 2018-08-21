@@ -14,7 +14,7 @@ public class npcHealth : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (currentHealth == 0)
+        if (currentHealth < 1)
         {
             Destroy(gameObject);
         }
